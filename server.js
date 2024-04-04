@@ -9,7 +9,8 @@ const PORT=process.env.PORT || 8000;
 const app=express()
 
 app.use(cors({
-    origin:"https://ird-frontend-fxvh.vercel.app"
+    origin:["https://ird-frontend-fxvh.vercel.app",
+            "http://localhost:3000"]
 }));
 
 app.use(express.json())
